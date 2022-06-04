@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #04011d;
+    color: white;
+    margin: 20px;
+}
+
+.container{
+    background-color: #070628;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    border-radius: 10px;
+    width: 500px;
+}
+
+.title{
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.title:hover{
+    cursor: default;
+}
+
+.periodic-table{
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    grid-template-rows: repeat(7, 85px);
+    grid-gap: 10px;
+    /* margin: auto; */
+    /* max-width: 1200px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.periodic-element{
+    background: rgb(33, 32, 53);
+    padding: 2px;
+    /* position: relative; */
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+
+.periodic-element .periodic-element-inner{
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* width: calc(100% - 30px); */
+    /* height: calc(100% - 20px); */
+    transition: inherit;
+}
+
+.periodic-element .atom{
+    font: 300 12px 'Nunito', sans-serif;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    margin-left: -0.5em;
+
+}
+
+.periodic-element .title{
+    font: 700 26px 'Nunito', sans-serif;
+    margin: 0.2em, 0 0;
+    transition: 1s ease 1000ms;
+    text-align: center;
+    cursor: pointer;
+}
+
+.periodic-element .desc{
+    font: 500 14px 'Nunito', sans-serif;
+    margin-top: -0.2em;
+    text-align: center;
+}
+
+.periodic-element:hover{
+    transform: scale(1.3);
+    z-index: 10;
+    border-radius: 15px;
+}
+
+.periodic-element:hover .periodic-element-inner{
+    background: transparent;
+}
+
+.periodic-element .lantan{
+    font: 700 19px 'Nunito', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.periodic-element .aktyn{
+    font: 700 19px 'Nunito', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.lantanowce{
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    grid-template-rows: repeat(2, 85px);
+    grid-gap: 10px;
+    /* margin: auto; */
+    /* max-width: 1200px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.one{
+    background: linear-gradient(to bottom right, #919feb 0%, #000000 100%);
+}
+
+.two{
+    background: linear-gradient(to bottom right, #e27970 0%, #000000 100%);
+}
+
+.three{
+    background: linear-gradient(to bottom right, #e0b245 0%, #000000 100%);
+}
+
+.four{
+    background: linear-gradient(to bottom right, #f2f5ac 0%, #000000 100%);
+}
+
+.five{
+    background: linear-gradient(to bottom right, #59e072 0%, #000000 100%);
+}
+
+.six{
+    background: linear-gradient(to bottom right, #0b8321 0%, #000000 100%);
+}
+
+.seven{
+    background: linear-gradient(to bottom right, #86057b 0%, #000000 100%);
+}
+
+.eight{
+    background: linear-gradient(to bottom right, #3728dd 0%, #000000 100%);
+}
+
+.nine{
+    background: linear-gradient(to bottom right, #13e239 0%, #000000 100%);
+}
+
+.ten{
+    background: linear-gradient(to bottom right, #2d382f 0%, #000000 100%);
+}
+
+.eleven{
+    background: linear-gradient(to bottom right, #7e7e7e 0%, #000000 100%);
+}
+
+h3.element{
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.info{
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(32, 32, 92);
+    margin: 0 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-text{
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.description{
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.right .hydro{
+    object-fit: cover;
+}
+
+@media(max-width: 2000px){
+    .periodic-table{
+        display: grid;
+        grid-template-columns: repeat(18, 80px);
+        grid-template-rows: repeat(7, 80px);
+        grid-gap: 7px;
+        /* margin: auto; */
+        /* max-width: 1200px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lantanowce{
+        display: grid;
+        grid-template-columns: repeat(18, 80px);
+        grid-template-rows: repeat(2, 80px);
+        grid-gap: 10px;
+        /* margin: auto; */
+        /* max-width: 1200px; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+    .size{
+        /* transform: scaleX(1); */
+        /* transform: scaleY(0.78); */
+        height: 78px;
+    }
+
+    .periodic-element .atom{
+        font: 300 10px 'Nunito', sans-serif;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        margin-left: -1em;
+    
+    }
+    
+    .periodic-element .title{
+        font: 700 22px 'Nunito', sans-serif;
+        margin: 0.2em, 0 0;
+        transition: 1s ease 1000ms;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .periodic-element .desc{
+        font: 500 11px 'Nunito', sans-serif;
+        margin-top: -0.2em;
+        text-align: center;
+    }
+
+    .periodic-element .lantan{
+        font-size: 12px;
+    }
+    .periodic-element .aktyn{
+        font-size: 12px;
+    }
+
+    .periodic-element{
+        border-radius: 8px;
+    }
+
+    .info{
+        box-shadow: 0 3px 10px rgba(0,0,0, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgb(32, 32, 92);
+        margin: 0 0px;
+        display: flex;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1600px){
+    .periodic-table{
+        display: grid;
+        grid-template-columns: repeat(18, 60px);
+        grid-template-rows: repeat(7, 60px);
+        grid-gap: 7px;
+        /* margin: auto; */
+        /* max-width: 1200px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lantanowce{
+        display: grid;
+        grid-template-columns: repeat(18, 60px);
+        grid-template-rows: repeat(2, 60px);
+        grid-gap: 7px;
+        /* margin: auto; */
+        /* max-width: 1200px; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+    .size{
+        /* transform: scaleX(1); */
+        /* transform: scaleY(0.78); */
+        height: 64px;
+    }
+
+    .periodic-element .atom{
+        font: 300 8px 'Nunito', sans-serif;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        margin-left: 0.5em;
+    
+    }
+    
+    .periodic-element .title{
+        font: 700 14px 'Nunito', sans-serif;
+        margin: 0.2em, 0 0;
+        transition: 1s ease 1000ms;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .periodic-element .desc{
+        font: 500 10px 'Nunito', sans-serif;
+        margin-top: -0.2em;
+        text-align: center;
+    }
+
+    .periodic-element .lantan{
+        font-size: 9px;
+    }
+    .periodic-element .aktyn{
+        font-size: 7px;
+    }
+
+    .periodic-element{
+        border-radius: 10px;
+    }
+
+    .periodic-element .periodic-element-inner{
+        padding: 10px 1px;
+        justify-content: center;
+        align-items: center;
+        transition: inherit;
+    }
+
+}
